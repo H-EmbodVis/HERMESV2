@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation">
+  <meta name="keywords" content="HERMES++, driving world model, 3D scene understanding, future geometry prediction, autonomous driving">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HERMES++</title>
+
+  <link rel="icon" media="(prefers-color-scheme:dark)" href="./static/images/logo.jpg" type="image/jpg">
+  <link rel="icon" media="(prefers-color-scheme:light)" href="./static/images/logo.jpg" type="image/jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+  <main>
+    <section class="hero project-hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p class="project-kicker">Unified Driving World Model</p>
+              <h1 class="title publication-title">
+                HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation
+              </h1>
+
+              <div class="publication-authors author-row">
+                <span class="author-block"><a href="https://lmd0311.github.io/" target="_blank" rel="noopener noreferrer">Xin Zhou</a><sup>1</sup></span>
+                <span class="author-block"><a href="https://dk-liang.github.io/" target="_blank" rel="noopener noreferrer">Dingkang Liang</a><sup>1</sup></span>
+                <span class="author-block"><a href="https://scholar.google.com/citations?user=PVMQa-IAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Xiwu Chen</a><sup>2</sup></span>
+                <span class="author-block">Feiyang Tan<sup>2</sup></span>
+                <span class="author-block">Dingyuan Zhang<sup>1</sup></span>
+                <span class="author-block"><a href="https://scholar.google.com/citations?user=4uE10I0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Hengshuang Zhao</a><sup>3</sup></span>
+                <span class="author-block"><a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Xiang Bai</a><sup>1</sup></span>
+              </div>
+
+              <div class="publication-authors affiliations">
+                <span class="author-block"><sup>1</sup>Huazhong University of Science and Technology</span>
+                <span class="author-block"><sup>2</sup>Mach Drive</span>
+                <span class="author-block"><sup>3</sup>The University of Hong Kong</span>
+              </div>
+
+              <div class="publication-links">
+                <a href="https://arxiv.org/abs/2501.14729" class="external-link button is-normal is-dark" target="_blank" rel="noopener noreferrer">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+                <a href="https://github.com/LMD0311/HERMES" class="external-link button is-normal is-dark" target="_blank" rel="noopener noreferrer">
+                  <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+                  <span>Conference Version</span>
+                </a>
+                <a href="https://github.com/H-EmbodVis/HERMESV2" class="external-link button is-normal is-dark" target="_blank" rel="noopener noreferrer">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+                <a href="https://huggingface.co/H-EmbodVis/HERMESV2" class="external-link button is-normal is-dark" target="_blank" rel="noopener noreferrer">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Weights</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section abstract-section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title section-title">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack the capacity to predict future geometric evolution, creating a significant disparity between semantic interpretation and physical simulation. To bridge this gap, we propose HERMES++, a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework. Our approach addresses the distinct requirements of these tasks through synergistic designs. First, a BEV representation consolidates multi-view spatial information into a structure compatible with LLMs. Second, we introduce LLM-enhanced world queries to facilitate knowledge transfer from the understanding branch. Third, a Current-to-Future Link is designed to bridge the temporal gap, conditioning geometric evolution on semantic context. Finally, to enforce structural integrity, we employ a Joint Geometric Optimization strategy that integrates explicit geometric constraints with implicit latent regularization to align internal representations with geometry-aware priors. Extensive evaluations on multiple benchmarks validate the effectiveness of our method. HERMES++ achieves strong performance, outperforming specialist approaches in both future point cloud prediction and 3D scene understanding tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-dr-grid">
+          <div class="tl-dr-card">
+            <h3>Unified Tasks</h3>
+            <p>One model handles both 3D scene understanding and future point cloud generation.</p>
+          </div>
+          <div class="tl-dr-card">
+            <h3>LLM-Enhanced Queries</h3>
+            <p>World queries transfer semantic knowledge from language reasoning into future geometry prediction.</p>
+          </div>
+          <div class="tl-dr-card">
+            <h3>Geometric Optimization</h3>
+            <p>Explicit and implicit geometric constraints keep generated futures structurally consistent.</p>
+          </div>
+        </div>
+
+        <figure class="paper-figure intro-figure">
+          <img src="./static/images/intro.png" alt="HERMES++ unified driving world model overview">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title">Pipeline</h2>
+        <figure class="paper-figure pipeline-figure">
+          <img src="./static/images/pipeline.png" alt="HERMES++ pipeline">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section demo-section">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title">Demo</h2>
+        <div class="demo-stack">
+          <article class="demo-item">
+            <video autoplay loop muted controls playsinline preload="metadata">
+              <source src="./static/images/video1.mp4" type="video/mp4">
+            </video>
+            <p>Example 1</p>
+          </article>
+          <article class="demo-item">
+            <video autoplay loop muted controls playsinline preload="metadata">
+              <source src="./static/images/video2.mp4" type="video/mp4">
+            </video>
+            <p>Example 2</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results-section">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title">Main Results</h2>
+        <figure class="paper-figure">
+          <img src="./static/images/main_results.png" alt="HERMES++ main results">
+        </figure>
+        <h3 class="subtitle result-subtitle">Why BEV as the LLM Input?</h3>
+        <p class="result-note">
+          Compared with directly feeding multi-view image features into the LLM, the BEV representation preserves spatial
+          structure more effectively. This improves future point cloud generation while maintaining comparable scene
+          understanding quality.
+        </p>
+        <figure class="paper-figure">
+          <img src="./static/images/bev_input_analysis.png" alt="Analysis of BEV input for HERMES++">
+        </figure>
+        <div class="analysis-split">
+          <div class="analysis-copy">
+            <h3 class="subtitle result-subtitle">Effect of Joint Geometric Optimization</h3>
+            <p>
+              Joint Geometric Optimization aligns latent features with geometry-aware priors. Compared with using explicit
+              point-cloud constraints alone, the learned representations recover clearer road layouts and future structural
+              patterns that better match LiDAR observations.
+            </p>
+            <p>
+              This improves the geometry branch without sacrificing the semantic reasoning ability inherited from the LLM.
+            </p>
+          </div>
+          <figure class="paper-figure analysis-figure">
+            <img src="./static/images/geometric_optimization.png" alt="Joint Geometric Optimization visualization">
+          </figure>
+        </div>
+        <h3 class="subtitle result-subtitle">Qualitative Results</h3>
+        <figure class="paper-figure">
+          <img src="./static/images/qualitative_examples.png" alt="HERMES++ qualitative results">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title section-title">BibTeX</h2>
+        <pre><code>@article{zhou2026hermespp,
+  title={HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation},
+  author={Zhou, Xin and Liang, Dingkang and Chen, Xiwu and Tan, Feiyang and Zhang, Dingyuan and Zhao, Hengshuang and Bai, Xiang},
+  journal={arXiv preprint},
+  year={2026}
+}
+
+@inproceedings{zhou2025hermes,
+  title={HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation},
+  author={Zhou, Xin and Liang, Dingkang and Tu, Sifan and Chen, Xiwu and Ding, Yikang and Zhang, Dingyuan and Tan, Feiyang and Zhao, Hengshuang and Bai, Xiang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2025}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer project-footer">
+    <div class="container is-max-desktop">
+      <p>
+        This website is adapted from the Nerfies project page template and updated for HERMES++.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
