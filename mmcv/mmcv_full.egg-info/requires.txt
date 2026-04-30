@@ -1,0 +1,56 @@
+addict
+numpy
+packaging
+Pillow
+pyyaml
+yapf
+
+[:sys_platform == "win32"]
+regex
+
+[all]
+pytest-runner
+ninja
+psutil
+addict
+numpy
+packaging
+Pillow
+pyyaml
+yapf
+coverage
+lmdb
+onnx
+onnxruntime>=1.8.0
+protobuf~=3.19.0
+pytest
+PyTurboJPEG
+scipy
+tifffile
+
+[all:python_version < "3.10"]
+onnxoptimizer
+
+[all:sys_platform == "win32"]
+regex
+
+[build]
+pytest-runner
+
+[optional]
+ninja
+psutil
+
+[tests]
+coverage
+lmdb
+onnx
+onnxruntime>=1.8.0
+protobuf~=3.19.0
+pytest
+PyTurboJPEG
+scipy
+tifffile
+
+[tests:python_version < "3.10"]
+onnxoptimizer
