@@ -15,7 +15,7 @@ Dingyuan Zhang<sup>1</sup>,
 </p>
 
 <p>
-  <a href="https://arxiv.org/abs/2604.xxxxx"><img src="https://img.shields.io/badge/HERMES++-arXiv-b31b1b?logo=arxiv" alt="HERMES Conference arXiv"></a>
+  <a href="https://arxiv.org/abs/2604.28196"><img src="https://img.shields.io/badge/HERMES++-arXiv-b31b1b?logo=arxiv" alt="HERMES Conference arXiv"></a>
   <a href="https://h-embodvis.github.io/HERMESV2/"><img src="https://img.shields.io/badge/HERMES++-Project_Page-2c7a3f?logo=githubpages" alt="HERMES++ Project Page"></a>
   <a href="https://huggingface.co/H-EmbodVis/HERMESV2"><img src="https://img.shields.io/badge/HERMES++-Weights-orange?logo=huggingface" alt="HERMES++ Weights"></a>
   <a href="https://arxiv.org/abs/2501.14729"><img src="https://img.shields.io/badge/HERMES_(ICCV25)-arXiv-b31b1b?logo=arxiv" alt="HERMES Conference arXiv"></a>
@@ -44,6 +44,7 @@ Driving world models serve as a pivotal technology for autonomous driving by sim
 
 ## Updates
 
+- **2025.04.30:** Release extended [paper](https://arxiv.org/abs/2604.28196) and code.
 - **2025.06.26:** The HERMES conference version is accepted to ICCV 2025.
 - **2025.01.24:** The HERMES paper and demo were released.
 
@@ -121,7 +122,7 @@ If this repository is useful for your research, please consider citing these pap
 @article{zhou2026hermespp,
   title={HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation},
   author={Zhou, Xin and Liang, Dingkang and Chen, Xiwu and Tan, Feiyang and Zhang, Dingyuan and Zhao, Hengshuang and Bai, Xiang},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2604.28196},
   year={2026}
 }
 @inproceedings{zhou2025hermes,
