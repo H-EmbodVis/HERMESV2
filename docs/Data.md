@@ -15,12 +15,13 @@ This guide walks you through preparing datasets and pretrained weights required 
   ln -s /path/to/your/nuscenes data/nuscenes
   ```
 - Download the following `.pkl` files and `mask_cam_img.jpg` to `data/nuscenes/`:
-  - [nuscenes_advanced_12Hz_infos_train.pkl](https://github.com/LMD0311/HERMES/releases/download/data/nuscenes_advanced_12Hz_infos_train.pkl)
+  - [nuscenes_advanced_12Hz_infos_train.pkl](https://huggingface.co/LMD0311/HERMES/blob/main/data/nuscenes_advanced_12Hz_infos_train.pkl)
+  - [nuscenes_unified_infos_val.pkl](https://huggingface.co/LMD0311/HERMES/blob/main/data/nuscenes_unified_infos_val.pkl)
   - [nuscenes_masked_only_infos_temporal_train.pkl](https://huggingface.co/LMD0311/HERMES/resolve/main/data/nuscenes_masked_only_infos_temporal_train.pkl)
   - [nuscenes_infos_temporal_train.pkl](https://github.com/LMD0311/HERMES/releases/download/data/nuscenes_infos_temporal_train.pkl)
   - [nuscenes_infos_temporal_val.pkl](https://github.com/LMD0311/HERMES/releases/download/data/nuscenes_infos_temporal_val.pkl)
   - [mask_cam_img.jpg](https://github.com/LMD0311/HERMES/releases/download/data/mask_cam_img.jpg)  (required for Stage2-1 data augmentation)
-- We also provide a Baidu Netdisk download [link](https://pan.baidu.com/s/1BdFAI3Cj8mWI3bdf9IT8QA?pwd=w63t) for your convenience.
+
 ---
 
 ## 2. Prepare Text Annotations
