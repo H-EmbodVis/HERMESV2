@@ -44,6 +44,7 @@ Driving world models serve as a pivotal technology for autonomous driving by sim
 
 ## Updates
 
+- **2026.09.10:** HERMES++ is accepted to IEEE TPAMI.
 - **2025.04.30:** Release extended [paper](https://arxiv.org/abs/2604.28196) and code.
 - **2025.06.26:** The HERMES conference version is accepted to ICCV 2025.
 - **2025.01.24:** The HERMES paper and demo were released.
@@ -122,8 +123,9 @@ If this repository is useful for your research, please consider citing these pap
 @article{zhou2026hermespp,
   title={HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation},
   author={Zhou, Xin and Liang, Dingkang and Chen, Xiwu and Tan, Feiyang and Zhang, Dingyuan and Zhao, Hengshuang and Bai, Xiang},
-  journal={arXiv preprint arXiv:2604.28196},
-  year={2026}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  doi={10.1109/TPAMI.2026.3735606}
 }
 @inproceedings{zhou2025hermes,
   title={HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation},
